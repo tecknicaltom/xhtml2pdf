@@ -173,7 +173,7 @@ def splitBorder(parts):
             # part = getNextPart(parts)
 
         # Style
-        elif _borderStyleTable.has_key(part.lower()):
+        elif hasattr(part, 'lower') and _borderStyleTable.has_key(part.lower()):
             style = part
             # part = getNextPart(parts)
 
